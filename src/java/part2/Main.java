@@ -1,14 +1,14 @@
 /*
- * Output from the program:
  * 
  * Without using proxy
  * Output: name: A, param: Hello
  * 
  * Using proxy:
- * Pre-execution log
+ * Call to Hello - start.
  * Output: name: A, param: Hello
- * Post-execution log
+ * Call to Hello - end.
  */
+package part2;
 
 /**
  *
@@ -23,7 +23,8 @@ public class Main {
 
         System.out.println("\nUsing proxy:");
 
-        Thing pThing = new LogProxy(t);
+        Functor f = new LogFunctor();
+        Thing pThing = new pThing(t, f);
         pThing.compute("Hello");
     }
 }

@@ -1,3 +1,5 @@
+package part1;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,11 +10,11 @@
  *
  * @author jsingh
  */
-public class LogProxy implements Thing {
+public class pThing implements Thing {
 
     Thing proxyThing;
 
-    public LogProxy(Thing t) {
+    public pThing(Thing t) {
         proxyThing = t;
     }
 
